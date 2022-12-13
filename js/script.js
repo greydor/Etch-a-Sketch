@@ -1,5 +1,5 @@
-let cellCount = 64;
-let size = 700;
+let cellCount = 50;
+let size = 1000;
 let colorMode = "black"
 
 function createGrid (size, cellCount) {
@@ -30,7 +30,7 @@ let grid = createGrid(size, cellCount);
 
 let setCellCount = document.querySelector("#set-cell-count");
 setCellCount.addEventListener("click", () => {
-    cellCountTemp = prompt("Select the number of cells per side", 64)
+    cellCountTemp = prompt("Select the number of cells per side", 50)
     if (cellCountTemp > 100) {
         alert("Select an number less than 101")
     }
@@ -42,7 +42,7 @@ setCellCount.addEventListener("click", () => {
 
 let setGridSize = document.querySelector("#set-grid-size");
 setGridSize.addEventListener("click", () => {
-    sizeTemp = prompt("Select the number of pixels per side", 700)
+    sizeTemp = prompt("Select the number of pixels per side", 1000)
     if (sizeTemp < 200) {
         alert("Select an number greater than 199")
     }
