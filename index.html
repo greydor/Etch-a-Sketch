@@ -7,6 +7,32 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
+  <h1>Etch-a-Sketch</h1>
+  <div id="settings">
+    <fieldset id="grid-size-settings">
+      <legend>Grid Settings</legend>
+      <button id="set-cell-count" type="button"># of cells per side</button>
+      <button id="set-grid-size" type="button">Grid width</button>
+    </fieldset>
+
+    <fieldset id="mode-select">
+
+      <legend>Select Color Mode:</legend>
+      <div>
+        <input type="radio" id="black" name="color-mode" value="black" checked>
+        <label for="black">Black</label>
+      </div>
+
+      <div>
+        <input type="radio" id="black" name="color-mode" value="random">
+        <label for="random">Random</label>
+      </div>
+      
+    </fieldset>
+    </div>
+    <div id="reset"><button id="reset-button" type="button">Reset</button></div>
+
+  </div>
   <div id="grid"></div>
 
 </body>

@@ -1,15 +1,52 @@
 #grid {
     display : grid;
-    background-color: red;
+    background-color: rgb(181, 180, 180);
     width: 500px;
     height: 500px;
     gap: 1px;
-    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-template-columns: repeat(100, 1fr);
     padding: 5px;
-
-
+    margin: auto;
 }
 
-.cell {
+h1 {
+    text-align: center;
+}
+
+#grid div {
     background-color: white;
+}
+
+
+#settings {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    height: 90px;
+}
+
+#grid-size-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#mode-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+legend {
+    text-align: center;
+}
+
+#reset {
+    text-align: center;
+    margin: 20px;
+}
+
+#reset button {
+    font-size: 24px;
+    font-weight: bold;
 }
