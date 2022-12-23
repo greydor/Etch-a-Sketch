@@ -7,9 +7,9 @@ function createGrid (size, cellCount) {
     while (grid.firstChild) {
         grid.removeChild(grid.firstChild);
     }
-    grid.style.width = size + "px";
-    grid.style.height = size + "px";
-    grid.style.gridTemplateColumns = "repeat(" + cellCount + ", 1fr)";
+    grid.style.width = `${size}px`;
+    grid.style.height = `${size}px`;
+    grid.style.gridTemplateColumns = `repeat(${cellCount}, 1fr)`;
     for (let i = 0; i < cellCount**2; i++){
         let cell = document.createElement("div");
         cell.classList.add("cell");
@@ -64,6 +64,6 @@ modeSelect.addEventListener("change", (event) => {
 })
 
 function generateRandomColor() {
-    let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    let randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
     return randomColor;
 }
